@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#name-bar{
+    text-align: center;
+    background-color:darkcyan;
+    height: 200px;
+   padding: 4.5rem;
+}
+#about{
+     text-align: center;
+    background-color: rgb(212, 211, 209);
+    height: 200px;
+    width: 1200px;
+      margin: 0 auto;  
+      padding: 4.4rem; 
+}
+.edu-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+#edu{
+      text-align: center;
+    background-color: lightblue;
+       height: 300px;
+    width: 1200px;
+      margin: 0 auto;   
+      border-radius: 10px;
+      padding: 4.4rem;
+     
+    
+}
+#skills{
+     text-align: center;
+    background-color: rgb(247, 247, 172);
+       height: 300px;
+    width: 1200px;
+      margin: 0 auto;   
+      border-radius: 10px;
+      padding: 4.4rem;
+     
+}
+
+#proj{
+     text-align: center;
+    background-color: rgb(251, 196, 204);
+       height: 300px;
+    width: 1200px;
+      margin: 0 auto;   
+      border-radius: 10px;
+      padding: 4.4rem;
+     
+}
+
+#contact{
+     text-align: center;
+    background-color: rgb(196, 245, 196);
+       height: 300px;
+    width: 1200px;
+      margin: 0 auto;   
+      border-radius: 10px;
+      padding: 4.4rem;
+     
+}
+.edu-in{
+    text-align: center;
+    background-color: white;
+    width:1080px;
+    margin: 0 auto;  
+    height: 35px; 
+ border-radius: 10px;
+ 
+}
+
