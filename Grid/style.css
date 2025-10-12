@@ -1,0 +1,155 @@
+@font-face {
+    font-family: "Korbin W01 Medium";
+    src: url("https://db.onlinewebfonts.com/t/953440d6182da090377d805e5156873c.eot");
+    src: url("https://db.onlinewebfonts.com/t/953440d6182da090377d805e5156873c.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/953440d6182da090377d805e5156873c.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/953440d6182da090377d805e5156873c.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/953440d6182da090377d805e5156873c.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/953440d6182da090377d805e5156873c.svg#Korbin W01 Medium")format("svg");
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Korbin W01 Medium';
+}
+html, body {
+  height: 100%;
+  width: 100%;
+}
+#main{
+    background-color: rgb(192, 192, 192);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main2{
+    background-color: white;
+    height: 95%;
+    width: 91%;
+}
+#nav{
+    height: 60px;
+    padding: 1rem 1rem;
+  display: flex;
+   padding-top: 1.6rem;
+   gap: 5rem;
+   justify-content: space-between;
+}
+
+#logo{
+ font-weight: 600;
+   font-size: 1.5rem;
+}
+#options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+#talk{
+    padding: 0.6rem  1.2rem;
+    background-color: rgb(46, 48, 62);
+    color: white;
+    border-radius: 1.2rem;
+}
+#log{
+   border: none;
+   background: none;
+   margin-right: 0.9rem;
+   font-weight: 700;
+}
+#main2{
+    position: relative;
+    overflow: hidden;
+    display: block;
+    border-radius: 2rem;
+}
+#grid{
+    display: grid;
+    grid-template-columns: 1fr repeat(2,minmax(100px,0.5fr)) ;
+    grid-template-rows:repeat(2,minmax(300px,1fr));
+    grid-template-areas: "text box1 box1"
+                          "text box2 box3"
+    
+    ;
+
+   grid-column-gap: 2rem;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    
+}
+#text{
+grid-area: text;
+margin-bottom: 15rem;
+margin-left: 2rem;
+
+}
+#box1{
+grid-area: box1;
+margin-top: 3.5rem;
+border-radius: 1rem;
+/* object-fit: cover;
+object-position: center; */
+
+}
+#img1{
+    width: 36rem;
+    border-radius: 1rem;
+}
+#box2{
+    grid-area: box2;
+     border-radius: 1rem;
+     
+    
+}
+#box3{
+    grid-area: box3;
+     border-radius: 1rem;
+     overflow: hidden;
+     margin-right: 5rem;
+}
+#img2{
+    width: 16rem;
+  
+    margin-left: 5rem;
+     border-radius: 1rem;
+     margin-bottom: 8rem;
+}
+#img3{
+     width: 17rem;
+      margin-bottom: 8rem;
+     border-radius: 1rem;
+   
+}
+
+#text{
+  height: 30rem;
+  font-size: 5rem;
+}
+#logod{
+ width: 10rem;
+ height: 3.5rem;
+  border-radius: 2rem;
+}
+#design{
+border-radius: 2rem;
+border: 2px solid black;
+font-size: 1.5rem;
+padding: 0.8rem 1.2rem;
+margin-bottom: 1rem;
+}
+.ri-play-line{
+  font-size: 2rem;
+}
+#footer{
+  font-size: 1rem;
+}
+#footer-cont{
+  margin-top: 4rem;
+}
