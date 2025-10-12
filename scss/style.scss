@@ -1,0 +1,71 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'helvetica neue';
+}
+html, body {
+  height: 100%;
+  width: 100%;
+}
+main{
+height: 100%;
+width: 100%;
+display: flex;
+overflow: hidden;
+gap: 0.5rem;
+@mixin background(){
+  height: 100%;
+         flex-grow: 1;
+         background-size: cover;
+         background-position: center;
+         transition: all ease  0.5s;
+}
+#child1{
+  
+    background-image: url(./img1.jpg);
+   @include background()
+}
+
+#child2{
+    background-image: url(./img2.jpg);
+    @include background()
+}
+
+#child3{
+    background-image: url(./img3.jpg);
+    @include background()
+}
+
+#child4{
+   background-image: url(./img4.jpg);
+    @include background()
+}
+
+#child5{
+   background-image: url(./img5.jpg);
+   @include background()
+}
+
+  
+}
+#child1:hover  {
+    flex-grow: 3;
+}
+ 
+#child2:hover  {
+    flex-grow: 3;
+}
+ 
+#child3:hover  {
+    flex-grow: 3;
+}
+ 
+#child4:hover  {
+    flex-grow: 3;
+}
+ 
+#child5:hover  {
+    flex-grow: 3;
+}
+ 
