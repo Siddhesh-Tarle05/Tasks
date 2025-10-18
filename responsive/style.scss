@@ -1,0 +1,351 @@
+@font-face {
+    font-family: f2;
+    src: url(./L0x5DF4xlVMF-BfR8bXMIjhLq38.woff2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: f2;
+    font-weight: 300;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+@mixin flex() {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin view3_4() {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+      max-width: 2000px;
+      
+      h1 {
+  font-size: clamp(20px, 2vw + 2rem, 50px);
+}
+    #top {
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    #bottom {
+        background-color: rgb(35, 35, 35);
+        @include flex();
+        color: white;
+        gap: 3rem;
+        padding: 1.8rem;
+        border-radius: 1rem;
+        width: 100%;
+
+        p {
+            color: gray;
+            font-weight: 400;
+            font-size: 1.25rem;
+            font-size: 1rem;
+        }
+
+        h1 {
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+
+    }
+}
+
+@mixin card($num,$img-url){
+ #bottom {
+            @include flex();
+            width: 100%;
+            .card#{$num}{
+                padding: 1rem;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 100%;
+                background-image: url(#{$img-url});
+                background-size: cover;
+                aspect-ratio: 1/1;
+
+                #icons {
+
+                    display: flex;
+                    justify-content: flex-end;
+                    gap: 0.7rem;
+                }
+
+                .icon1,
+                .icon2,
+                .icon3 {
+                    border: 1px solid white;
+                    border-radius: 0.7rem;
+                    padding: 0.5rem;
+                    width: fit-content;
+                    border-radius: 50%;
+                    background-color: rgba(186, 186, 186, 0.616);
+                    backdrop-filter: blur(5px);
+                    border: 1px solid white;
+                }
+
+                #box-bottom {
+                    background-color: rgba(186, 186, 186, 0.616);
+                    backdrop-filter: blur(5px);
+                    border: 1px solid white;
+                    border-radius: 0.7rem;
+                    padding: 0.5rem;
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+        }
+}
+
+main {
+    background-color: black;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    @include flex();
+
+    #view1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        max-width: 2000px;
+        gap: 1rem;
+         
+
+        #top {
+            width: 100%;
+
+            img {
+                width: 100%;
+                border-radius: 1rem;
+            }
+        }
+
+        #bottom {
+             padding-left: 4rem;
+            h1 {
+  font-size: clamp(20px, 2vw + 2rem, 50px);
+}
+       
+            background-color: rgb(35, 35, 35);
+            justify-content: space-around;
+            @include flex();
+            color: white;
+            gap: 3rem;
+            padding: 2.5rem;
+            padding-bottom: 2.5rem;
+          
+            border-radius: 1rem;
+            width: 100%;
+            gap: 5rem;
+
+            p {
+                color: gray;
+                font-weight: 400;
+                font-size: 1.25rem;
+            }
+
+            h1 {
+                margin-bottom: 1rem;
+                text-transform: uppercase;
+            }
+
+            button {
+                margin-top: 1rem;
+                background: none;
+                border: none;
+                color: white;
+                font-size: 1rem;
+            }
+        }
+
+
+    }
+
+    #view2 {
+        display: flex;
+        flex-direction: column;
+        padding: 1.3rem;
+        gap: 1rem;
+        width: 100%;
+         max-width: 2000px;
+
+       
+        #top,
+        #bottom {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 100%;
+              h1 {
+  font-size: clamp(20px, 2vw + 2rem, 50px);
+}
+ 
+            #box {
+                display: flex;
+                flex-direction: column;
+                color: white;
+                text-align: center;
+
+                #name {
+                    font-size: 0.7rem;
+                }
+
+                #num {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+
+    #view3 {
+        @include view3_4();
+       #bottom{
+          justify-content: space-around;
+       }
+    }
+
+    #view4 {
+        @include view3_4();
+         #bottom{
+          justify-content: space-around;
+       }
+    }
+
+    #view5 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 1rem;
+          max-width: 2000px;
+
+        #top {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            color: white;
+        }
+        @include card(1,"img4.webp");
+        @include card(2,"img5.webp");
+        @include card(3,"img6.webp")
+       
+    }
+    #view6{
+        @include view3_4();
+    }
+}
+
+@media(min-width:800px) {
+    main {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        #view1 {
+            gap: 1rem;
+            flex-direction: row;
+            #top {
+                width: 50%;
+            }
+            #bottom {
+                width: 50%;
+                gap: 15rem;
+                padding: 4.5rem;
+
+                background-color: rgb(35, 35, 35);
+                color: white;
+                gap: 3rem;
+              
+                border-radius: 1rem;
+            }
+
+            p {
+                color: gray;
+                font-weight: 400;
+                font-size: 1.25rem;
+            }
+
+            h1 {
+                margin-bottom: 1rem;
+                text-transform: uppercase;
+            }
+
+            button {
+                margin-top: 1rem;
+                background: none;
+                border: none;
+                color: white;
+                font-size: 1rem;
+            }
+
+        }
+
+        #view2 {
+            flex-direction: row;
+            justify-content: space-around;
+
+            #top,
+            #bottom {
+
+                #box #num {
+                    font-size: 4rem;
+                }
+            }
+        }
+
+        #view3 {
+            flex-direction: row-reverse;
+
+            #top {
+                width: 50%;
+
+            }
+
+            #bottom {
+                width: 50%;
+            }
+        }
+
+        #view4 {
+            flex-direction: row;
+            #top {
+                width: 50%;
+            }
+            #bottom {
+                width: 50%;
+            }
+        }
+
+        #view5{
+            #bottom{
+                flex-direction: row;
+                gap: 1rem;
+            }
+        }
+        #view6{
+              flex-direction: row;
+            #top {
+                width: 50%;
+            }
+            #bottom {
+                width: 50%;
+            }
+        }
+    }
+}
