@@ -1,0 +1,280 @@
+@font-face {
+  font-family: f1;
+  src: url(./4UasrENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPjIUvQ.woff2);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: f1;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+main nav #others {
+  display: none;
+}
+main #view1 {
+  background: linear-gradient(35deg, #fcdde8, #f3fcff 60%);
+  width: 100%;
+}
+main #view1 #back {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4rem;
+}
+main #view1 #back #bottom {
+  width: 100%;
+  text-align: center;
+}
+main #view1 #back #bottom h1 {
+  font-size: 1.5rem;
+  width: 100%;
+}
+main #view1 #back #top {
+  width: 100%;
+}
+main #view1 #back #top img {
+  width: 100%;
+}
+main #view1 p {
+  font-size: 1rem;
+  text-align: center;
+  padding-bottom: 5rem;
+  padding: 3rem 2rem;
+}
+main #view2 {
+  display: flex;
+  flex-direction: column;
+}
+main #view2 #view2in {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 1rem 1rem;
+}
+main #view2 #view2in #line {
+  height: 3px;
+  width: 80%;
+  background-color: rgb(163, 163, 163);
+}
+main #view2 #view2in img {
+  width: 100%;
+}
+main #view3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 4rem;
+}
+main #view3 #image {
+  width: 100%;
+}
+main #view3 #image img {
+  width: 100%;
+}
+main #view3 #content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main #view3 #content h1 {
+  font-size: 3.5rem;
+}
+main #view3 #content button {
+  background: none;
+  border: 1px solid black;
+  padding: 0.2rem 2rem;
+  width: 14rem;
+  border-radius: 1rem;
+}
+main #view4 {
+  width: 100%;
+  background: linear-gradient(35deg, #fcfce2 40%, #f5fbfe 90%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 4rem;
+}
+main #view4 #img {
+  width: 100%;
+}
+main #view4 #img img {
+  width: 100%;
+}
+main #view4 #content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main #view4 #content h1 {
+  font-size: 3.5rem;
+}
+main #view4 #content button {
+  background: none;
+  border: 1px solid black;
+  padding: 0.2rem 2rem;
+  width: 14rem;
+  border-radius: 1rem;
+}
+main #view5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 4rem;
+}
+main #view5 #image {
+  width: 100%;
+}
+main #view5 #image img {
+  width: 100%;
+}
+main #view5 #content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main #view5 #content h1 {
+  font-size: 3.5rem;
+}
+main #view5 #content button {
+  background: none;
+  border: 1px solid black;
+  padding: 0.2rem 2rem;
+  width: 14rem;
+  border-radius: 1rem;
+}
+main #view6 {
+  display: flex;
+  justify-content: center;
+  display: flex;
+  padding: 1rem 4rem;
+  color: white;
+}
+main #view6 #view6in {
+  background-image: url(./img9.png);
+  background-size: 120%;
+  display: flex;
+  aspect-ratio: 1/1;
+  width: 100%;
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-color: #042449;
+}
+
+@media (min-width: 1080px) {
+  main nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  main nav #others {
+    display: flex;
+    gap: 1.3rem;
+    text-align: center;
+  }
+  main nav #others a {
+    text-decoration: none;
+    color: rgb(107, 107, 107);
+    font-weight: 600;
+  }
+  main nav #others button {
+    border: none;
+    background-color: royalblue;
+    padding: 0.5rem 1.5rem;
+    color: white;
+    border-radius: 1rem;
+  }
+  main #view1 #back {
+    flex-direction: row-reverse;
+    padding: 5rem 15rem;
+    align-items: center;
+  }
+  main #view1 #back #bottom {
+    width: 50%;
+  }
+  main #view1 #back #bottom h1 {
+    font-size: 4rem;
+  }
+  main #view1 #back #top {
+    width: 50%;
+  }
+  main #view1 p {
+    font-size: 2rem;
+  }
+  main #view2 {
+    flex-direction: row;
+    padding: 1.5rem 4rem;
+  }
+  main #view3 {
+    flex-direction: row-reverse;
+  }
+  main #view3 #img {
+    width: 50%;
+  }
+  main #view3 #content {
+    width: 54%;
+    padding-left: 2rem;
+  }
+  main #view3 #content p {
+    font-size: 1.5rem;
+  }
+  main #view4 {
+    flex-direction: row;
+  }
+  main #view4 #img {
+    width: 50%;
+  }
+  main #view4 #content {
+    width: 54%;
+    padding-left: 2rem;
+  }
+  main #view4 #content p {
+    font-size: 1.5rem;
+  }
+  main #view5 {
+    flex-direction: row-reverse;
+  }
+  main #view5 #image {
+    width: 50%;
+  }
+  main #view5 #content {
+    width: 54%;
+    padding-left: 2rem;
+  }
+  main #view5 #content p {
+    font-size: 1.5rem;
+  }
+  main #view6 {
+    display: flex;
+    justify-content: center;
+    display: flex;
+  }
+  main #view6 #view6in {
+    background-image: url(./img9.png);
+    background-size: 35%;
+    display: flex;
+    aspect-ratio: 16/5;
+    width: 100%;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: #042449;
+    width: 60%;
+  }
+  main #view6 #view6in #text {
+    width: 50%;
+    padding: 70px;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,335 @@
+@font-face {
+    font-family: f1;
+    src: url(./4UasrENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPjIUvQ.woff2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: f1;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+   
+   nav{
+    #others{
+        display: none;
+    }
+   }
+    #view1 {
+        background: linear-gradient(35deg, #fcdde8, #f3fcff 60%);
+        width: 100%;
+
+        #back {
+            width: 100%;
+            display: flex;
+            // flex-direction: row;
+            flex-direction: column;
+            // align-items: center;
+            // padding-left: 15rem;
+            //  padding-right: 15rem;
+            //  padding-top: 5rem;
+            //  padding-bottom: 5rem;
+            justify-content: center;
+            gap: 4rem;
+
+            #bottom {
+                width: 100%;
+                text-align: center;
+
+                h1 {
+                    font-size: 1.5rem;
+                    width: 100%;
+                }
+            }
+
+            #top {
+                width: 100%;
+
+                img {
+                    width: 100%;
+
+                    // object-fit: cover;
+                }
+            }
+        }
+
+        p {
+            font-size: 1rem;
+            text-align: center;
+            padding-bottom: 5rem;
+            padding: 3rem 2rem;
+        }
+    }
+    #view2{
+        display: flex;
+        flex-direction: column;
+      #view2in{
+
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     gap: 1.5rem;
+     align-items: center;
+     padding: 1rem 1rem;
+     #line{
+        height: 3px;
+        width: 80%;
+        background-color: rgb(163, 163, 163);
+        
+     }
+     img{
+        width: 100%;
+     }
+    }
+    }
+
+    #view3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 4rem;
+        #image{
+            width: 100%;
+           img{
+            width: 100%;
+           }
+        }
+        #content{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            h1{
+                font-size: 3.5rem;
+            }
+            button{
+                background: none;
+                border: 1px solid black;
+                padding: 0.2rem 2rem;
+                width: 14rem;
+                border-radius: 1rem;
+            }
+        }
+    }
+
+    #view4{
+        width: 100%;
+        background: linear-gradient(35deg, #fcfce2 40%, #f5fbfe 90%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 4rem;
+        #img{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+
+         #content{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            h1{
+                font-size: 3.5rem;
+            }
+            button{
+                background: none;
+                border: 1px solid black;
+                padding: 0.2rem 2rem;
+                width: 14rem;
+                border-radius: 1rem;
+            }
+        }
+    }
+    #view5{
+         display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 4rem;
+        #image{
+            width: 100%;
+           img{
+            width: 100%;
+           }
+        }
+        #content{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            h1{
+                font-size: 3.5rem;
+            }
+            button{
+                background: none;
+                border: 1px solid black;
+                padding: 0.2rem 2rem;
+                width: 14rem;
+                border-radius: 1rem;
+            }
+        }
+    } 
+     #view6{
+   display: flex;
+   justify-content: center;
+   display: flex;
+   padding: 1rem 4rem;
+   color: white;
+      #view6in{
+        background-image: url(./img9.png);
+        background-size: 120%;
+        display: flex;
+        aspect-ratio: 1/1;
+    width: 100%;
+    background-position:top right;
+    background-repeat: no-repeat;
+    background-color: #042449;
+      
+   }
+
+    }
+
+   
+}
+
+@media (min-width: 1080px) {
+  main {
+     nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+
+        #others {
+            display: flex;
+            gap: 1.3rem;
+            text-align: center;
+
+            a {
+                text-decoration: none;
+                color: rgb(107, 107, 107);
+                font-weight: 600;
+            }
+
+            button {
+                border: none;
+                background-color: royalblue;
+                padding: 0.5rem 1.5rem;
+                color: white;
+
+                border-radius: 1rem;
+            }
+        }
+
+    }
+   
+    #view1 {
+      #back {
+        flex-direction: row-reverse; // side by side
+        padding: 5rem 15rem; 
+      align-items: center;
+            
+
+        #bottom {
+          width: 50%;
+
+          h1 {
+            font-size: 4rem; // bigger font on laptop
+          }
+        }
+
+        #top {
+          width: 50%;
+        }
+      }
+      p{
+        font-size: 2rem;
+      }
+    }
+
+    #view2{
+        flex-direction: row;
+        padding: 1.5rem 4rem;
+    }
+
+    #view3{
+        flex-direction: row-reverse;
+        #img{
+            width: 50%;
+        }
+        #content{
+            width: 54%;
+            padding-left: 2rem;
+            p{
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    #view4{
+        flex-direction: row;
+        #img{
+            width: 50%;
+        }
+        #content{
+            width: 54%;
+            padding-left: 2rem;
+            p{
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    #view5{
+          flex-direction: row-reverse;
+        #image{
+            width: 50%;
+        }
+        #content{
+            width: 54%;
+            padding-left: 2rem;
+            p{
+                font-size: 1.5rem;
+            }
+        }
+    }
+    #view6{
+   display: flex;
+   justify-content: center;
+   display: flex;
+      #view6in{
+        background-image: url(./img9.png);
+        background-size: 35%;
+        display: flex;
+        aspect-ratio: 16/5;
+    width: 100%;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: #042449;
+      width: 60%;
+          #text{
+        width: 50%;
+        padding: 70px;
+       
+    }
+   }
+
+    }
+
+  
+
+  }
+}
